@@ -3,6 +3,7 @@ services:
     name: westonweather-proxy
     env: node
     plan: free
+    rootDir: .
     buildCommand: npm install
     startCommand: npm start
     envVars:
