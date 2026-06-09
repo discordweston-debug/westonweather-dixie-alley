@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: westonweather-proxy
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: CONTACT_EMAIL
+        value: discordweston@gmail.com
