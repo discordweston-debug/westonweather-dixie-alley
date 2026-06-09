@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WestonWeather: Dixie Alley</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>WestonWeather: Dixie Alley</h1>
+    <form id="searchForm">
+      <input id="town" placeholder="Town (e.g. Birmingham)" required />
+      <input id="state" placeholder="State (e.g. AL)" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <section id="location"></section>
+    <section id="alerts"></section>
+    <section id="forecast"></section>
+    <section id="hourly"></section>
+    <div id="status"></div>
+  </main>
+
+  <!-- IMPORTANT: Replace the value of PROXY_BASE with your deployed proxy URL (no trailing slash),
+       e.g. https://my-weston-proxy.onrender.com -->
+  <script>
+    const PROXY_BASE = 'https://REPLACE_WITH_YOUR_PROXY_URL';
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
